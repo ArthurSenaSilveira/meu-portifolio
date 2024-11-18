@@ -111,26 +111,6 @@ header {
     text-align: center;
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-icons a {
-    text-decoration: none;
-  }
-  
-  .social-icon {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: 40px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icons a:hover .social-icon {
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-  }
-  
   section.contato a {
     font-family: var(--font-quicksand); /* Fonte amigável para o link */
     color: var(--cor-acento); /* Cor de destaque */
