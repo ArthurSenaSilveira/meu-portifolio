@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/*
+Telas pequenas:  Até 600px
+Cell: 600px Até 768px
+Tablet: 768px Até 992px
+PC: 992px Até 1200px
+Telas grandes: Acima de 1200px
+*/
+
+@media screen and (max-width: 768px) {
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
@@ -163,8 +172,8 @@ footer {
 }
 
 #social-icon {
-  width: 40px; /* Ajuste o tamanho conforme necessário */
-  height: 40px;
+  width: 55px; /* Ajuste o tamanho conforme necessário */
+  height: 55px;
   transition: transform 0.3s ease;
 }
 
@@ -173,4 +182,7 @@ footer {
 }
 footer p {
     text-align: center;
-  }
+    font-size: 1.5em;
+  }    
+}
+

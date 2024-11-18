@@ -157,7 +157,7 @@ section.contato a:hover {
 footer {
   display: flex;
   flex-flow: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--cor-bege);
 
 }
