@@ -30,108 +30,112 @@ body {
 }
 
 header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
     background-color: var(--cor-bege); /* Fundo suave e acolhedor */
     color: var(--cor-cinza-escuro); /* Texto em cinza escuro */
     padding: 20px;
     text-align: center;
-  }
+}
   
-  header h1 {
+header h1 {
     font-family: var(--font-lora); /* Fonte elegante para o nome */
-    font-size: 2.5rem;
+    font-size: 3em;
     font-weight: bold;
-  }
+}
   
-  header p {
+header p {
     font-family: var(--font-nunito); /* Fonte moderna e legível para a descrição */
     font-size: 1.2rem;
     font-weight: 400;
-  }
+}
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
+}
   
-  .social-icons a {
+.social-icons a {
     text-decoration: none;
-  }
+}
   
-  .social-icon {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: 40px;
+.social-icon {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px;
     transition: transform 0.3s ease;
-  }
+}
   
-  .social-icons a:hover .social-icon {
+.social-icons a:hover .social-icon {
     transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-  }
+}
   
-  section.sobre-mim {
+section.sobre-mim {
     background-color: var(--cor-cinza); /* Fundo suave para a seção */
     color: var(--cor-cinza-escuro); /* Texto em cinza escuro */
     padding: 40px 20px;
     text-align: center;
-  }
+}
 
-  section.sobre-mim h2 {
+section.sobre-mim h2 {
     font-size: 2rem;
-  }
+}
   
-  section.sobre-mim p {
+section.sobre-mim p {
     font-family: var(--font-nunito); /* Texto legível */
     font-size: 1.1rem;
     line-height: 1.6;
     color: var(--cor-cinza-escuro);
-  }
+}
 
-  section.projetos {
+section.projetos {
     background-color: var(--cor-branco); /* Fundo claro */
     padding: 40px 20px;
-  }
+}
   
-  section.projetos h2 {
+section.projetos h2 {
     font-family: var(--font-lora); /* Fonte clássica para os títulos */
     font-size: 2rem;
     color: var(--cor-cinza-escuro);
     text-align: center;
-  }
+}
   
-  section.projetos p {
+section.projetos p {
     font-family: var(--font-nunito); /* Fonte mais moderna para o texto */
     font-size: 1.1rem;
     color: black;
     text-align: center;
-  }
+}
 
-  section.contato {
+section.contato {
     background-color: var(--cor-cinza-medio-claro); /* Fundo suave */
     padding: 40px 20px;
     text-align: center;
-  }
+}
 
-  section.contato a {
+section.contato a {
     font-family: var(--font-quicksand); /* Fonte amigável para o link */
     color: var(--cor-acento); /* Cor de destaque */
     text-decoration: none;
     font-size: 1.2rem;
-  }
+}
   
-  section.contato a:hover {
+section.contato a:hover {
     text-decoration: underline;
-  }
+}
   
-  footer {
+footer {
     background-color: var(--cor-cinza-escuro); /* Fundo escuro */
     color: var(--cor-branco); /* Texto branco */
     padding: 20px 0;
     text-align: center;
-  }
+}
 
-  footer p {
+footer p {
     color: rgb(92, 77, 77);
     font-family: var(--font-nunito);
-  }
+}
   
   
