@@ -22,6 +22,11 @@ Telas grandes: Acima de 1200px
     --cor-bege: #E6E6E6;
     --cor-cinza-medio-claro: #C8C8C8;
     --cor-Cinza-Claro-com-Toque-de-Bege: #A69A92;
+    --cor-azul-escuro-0: #202224;
+    --cor-azul-escuro-1: #0C2557;
+    --cor-azul-escuro-2: #123680;
+    --cor-azul-claro-0: #2268F5;
+    --cor-azul-claro-1: #1848A8;
 }
 * {
     padding: 0px;
@@ -41,7 +46,7 @@ html, body {
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor-bege);
+    background-color: var(--cor-azul-escuro-0);
 }
 
 header {
@@ -50,7 +55,7 @@ header {
     justify-content: space-between;
 
     background-color: var(--cor-bege); /* Fundo suave e acolhedor */
-    color: var(--cor-cinza-escuro); /* Texto em cinza escuro */
+    color: black; /* Texto em cinza escuro */
     padding: 20px;
     text-align: center;
 }
@@ -91,7 +96,7 @@ header, footer p {
   
 section.sobre-mim {
     background-color: var(--cor-cinza); /* Fundo suave para a seção */
-    color: var(--cor-cinza-escuro); /* Texto em cinza escuro */
+    color: black; /* Texto em cinza escuro */
     padding: 40px 20px;
     text-align: center;
 }
