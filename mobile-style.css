@@ -101,7 +101,7 @@ header::before {
 
 #apresentacao a:hover {
     color: #ff7f50;
-    margin-left: 10px;
+    font-size: 1.2em;
 }
 
 #apresentacao p#linkedim {
