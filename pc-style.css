@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and ((min-width: 1024px)) {
+    #foto {
+    grid-template-columns: repeat(1fr, 7);
+    }
+    #foto img {
+        grid-column: 2 / 4;
+    }
+    #foto h1 {
+        grid-column: 3 / 5;
+    }
+    #foto p {
+        grid-column: 3 / 5;
+    }
+    #apresentacao {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    #apresentacao h2 {
+        grid-column: 2 / 10;
+    }
+    #apresentacao p#linkedim {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    
+    #apresentacao p#insta {
+        grid-column: 5;
+        grid-row: 3;
+    }
+    
+    #apresentacao p#git {
+        grid-column: 7;
+        grid-row: 3;
+    }
+    
+
+}
