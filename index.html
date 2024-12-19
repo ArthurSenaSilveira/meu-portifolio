@@ -8,10 +8,9 @@
       content="Portfólio de Arthur Sena - Desenvolvedor Web focado em HTML5, CSS3, JavaScript e boas práticas de desenvolvimento front-end."
     />
 
-    <title>Meu Portifólio</title>
+    <title>Portfólio de Arthur Sena</title>
 
     <link rel="stylesheet"  href="mobile-style.css"/>
-
 
     <link rel="stylesheet" href="ipad-style.css" media="(min-width: 481px)">
 
@@ -45,48 +44,56 @@
   <body>
     <header>
       <div id="foto">
-        <img src="imagens/foto de perfil.jpg" alt="Minha foto..." />
+        <img src="imagens/foto de perfil.jpg" alt="Minha foto profissional" />
         <h1>Arthur<strong>Dev</strong></h1>
-        <p>Web-develorper</p>
+        <p>Desenvolvedor Web</p>
       </div>
       <div id="apresentacao">
-        <h2>Olá! Me chamo Arthur, sou um desenvolvedor front-end.</h2>
+        <h2>Olá, sou Arthur Sena. Desenvolvedor front-end apaixonado por criar soluções digitais inovadoras.</h2>
         <p id="linkedim">
-          <a href="#"><strong>Linkedim </strong></a>
+          <a href="#"><strong>LinkedIn</strong></a>
         </p>
         <p id="insta">
-          <a href="#"><strong>Instagram</strong> </a>
+          <a href="#"><strong>Instagram</strong></a>
         </p>
         <p id="git">
-          <a href="#"><strong>GitHub</strong> </a>
+          <a href="#"><strong>GitHub</strong></a>
         </p>
       </div>
     </header>
     <main>
-      <div id="">
-        <h1>Apredizagem.</h1>
-        <p>Minha linha do Tempo na programação</p>
-        <div class="timeline-container">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">2024</div>
-              <div class="timeline-content">
-                <h3>Evento Importante 1</h3>
-                <p>Descrição do evento que ocorreu em 2024. Algo relevante para o portfólio.</p>
-              </div>
+      <section class="trajetoria">
+        <h1>Minha Jornada</h1>
+        <p>Acompanhe a minha evolução na minha trajetória como desenvolvedor.</p>
+        <div class="timeline"></div> <!-- Linha vertical -->
+        <div class="evento">
+            <div class="data">
+                <span>Setembro 2024</span>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2023</div>
-              <div class="timeline-content">
-                <h3>Evento Importante 2</h3>
-                <p>Descrição do evento que aconteceu em 2023. Outro marco importante.</p>
-              </div>
+            <div class="descricao">
+                Concluí os cursos de HTML5 e CSS3 na plataforma <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>.
             </div>
-            <!-- Adicione mais itens de timeline conforme necessário -->
+        </div>
+        <div class="evento">
+            <div class="data">
+                <span>Setembro 2024</span>
+            </div>
+            <div class="descricao">
+                Realizei o curso de JavaScript na plataforma <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>, aprimorando habilidades de programação e lógica para interatividade em sites.
+            </div>
+        </div>
+        <div class="evento">
+          <div class="data">
+              <span>Dezembro 2024</span>
+          </div>
+          <div class="descricao">
+              Estudo aprofundado de Lógica de Programação com JavaScript, consolidando os fundamentos essenciais para o desenvolvimento de soluções inovadoras.
           </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
-  </body>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script src="index.js"></script>
+</body>
 </html>
