@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-header, main {
-    height: 1390px;
+header, main, footer {
+    height: 100vh;
     position: relative;
     background: #1b1b1b;
     overflow: hidden;
@@ -124,11 +124,11 @@ header::before {
 
 .trajetoria {
     width: 100%;
-    height: 750px;
+    height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-rows: 30px 50px 1fr;
+    grid-template-rows: 30px 50px 1fr 1fr;
     color: white;
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -148,7 +148,7 @@ header::before {
 }
 
 .timeline {
-    grid-row: 3;
+    grid-row: 3 / 6;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -161,10 +161,10 @@ header::before {
 .evento {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: space-evenly;
+    margin: 20px 0px;
     grid-column: 2 / 7;
-    height: 200px;
+    height: 250px;
 }
 
 .data, .descricao {
@@ -201,20 +201,22 @@ header::before {
 
 .evento:nth-child(even) .descricao {
     order: -1;
-}
-.evento {
+}.evento {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.evento.visible {
+  }
+  
+  .evento.visible {
     opacity: 1;
     transform: translateY(0);
-}
-.evento.hidden {
+  }
+  
+  .evento.hidden {
     opacity: 0;
     transform: translateY(50px);
-}
+  }
+  
   
   
       
