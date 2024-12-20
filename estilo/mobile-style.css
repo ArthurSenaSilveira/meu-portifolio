@@ -104,6 +104,7 @@ header::before {
 
 #apresentacao a:hover {
     color: #ff7f50;
+    transition: .3s;
 }
 
 #apresentacao p#linkedim {
@@ -189,7 +190,7 @@ header::before {
     font-family: 'Lora', serif;
     text-decoration: none;
     cursor: pointer;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 5px;
 }
 
 .evento:nth-child(odd) .data {
@@ -200,4 +201,51 @@ header::before {
 
 .evento:nth-child(even) .descricao {
     order: -1;
+}
+.evento {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.evento.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.evento.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+  
+  
+      
+
+
+footer {
+    color: white;
+    width: 100%;
+    height: 598px;
+    background: #1b1b1b;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+footer h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+    text-align: center;
+}
+footer button {
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    background-color: #3498db;
+    cursor: pointer;
+    margin: 10px;
+}
+footer button:hover {
+    background-color: #ff7f50;
+    transition: .3s;
 }

@@ -1,24 +1,28 @@
-// Função que será chamada quando o evento estiver visível na tela
-const observerOptions = {
-    root: null,  // Observa a visibilidade dentro da viewport (área visível da tela)
-    threshold: 0.5  // A animação é acionada quando 50% do elemento entra na viewport
-};
-
-// Cria o Intersection Observer
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        // Se o evento estiver visível
-        if (entry.isIntersecting) {
-            // Adiciona a classe 'show' para animar a data e descrição
-            entry.target.classList.add('show');
-            // Após o evento ser visto, não é necessário observar mais
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// Seleciona todos os eventos para observar
+// Função que adiciona ou remove a classe 'visible' aos eventos
 const eventos = document.querySelectorAll('.evento');
+
+let lastScrollY = window.scrollY;  // Guardar a última posição de rolagem
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && window.scrollY > lastScrollY) {
+      // Se o elemento entrar na tela e a rolagem for para baixo, o elemento aparece
+      entry.target.classList.add('visible');
+      entry.target.classList.remove('hidden');
+    } else if (!entry.isIntersecting && window.scrollY < lastScrollY) {
+      // Quando o elemento sair da tela e a rolagem for para cima, o elemento ainda vai ficar invisível
+      entry.target.classList.remove('visible');  // Não precisa animar sumindo
+      entry.target.classList.add('hidden');
+    }
+  });
+
+  // Atualizando a última posição de rolagem
+  lastScrollY = window.scrollY;
+}, {
+  threshold: 0.5  // O elemento precisa estar 50% visível para disparar a animação
+});
+
+// Começa a observar todos os eventos
 eventos.forEach(evento => {
-    observer.observe(evento);  // Inicia a observação de cada evento
+  observer.observe(evento);
 });
