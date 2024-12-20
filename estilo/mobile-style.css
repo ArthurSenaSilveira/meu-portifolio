@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-header, main, footer {
-    height: 100vh;
+header {
+    height: 200vh;
     position: relative;
     background: #1b1b1b;
     overflow: hidden;
@@ -49,6 +49,8 @@ header::before {
     height: 300px;
     grid-column: 2;
     grid-row: 2 / 5;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 #foto h1 {
@@ -58,7 +60,7 @@ header::before {
     grid-column: 3;
     grid-row: 2 / 5;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 4px;
 }
 
 #foto h1 strong {
@@ -122,13 +124,20 @@ header::before {
     grid-row: 3;
 }
 
+main {
+    position: relative;
+    background: #1b1b1b;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .trajetoria {
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr repeat(5, 1fr) 1fr;
-    grid-template-rows: 30px 50px 1fr 1fr;
+    grid-template-rows: 30px 50px 1fr;
     color: white;
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -148,7 +157,7 @@ header::before {
 }
 
 .timeline {
-    grid-row: 3 / 6;
+    grid-row: 3 / 7;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -164,7 +173,7 @@ header::before {
     justify-content: space-evenly;
     margin: 20px 0px;
     grid-column: 2 / 7;
-    height: 250px;
+    height: 200px;
 }
 
 .data, .descricao {
@@ -222,24 +231,24 @@ header::before {
       
 
 
-footer {
-    color: white;
+.chamada {
     width: 100%;
     height: 598px;
-    background: #1b1b1b;
-
+    background: #1b1b1b ;
+    
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-footer h1, h2 {
+.chamada h1, h2 {
+    color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     margin: 5px;
     text-align: center;
 }
-footer button {
+.chamada button {
     border: none;
     border-radius: 40px;
     padding: 15px;
@@ -247,7 +256,13 @@ footer button {
     cursor: pointer;
     margin: 10px;
 }
-footer button:hover {
+.chamada button:hover {
     background-color: #ff7f50;
-    transition: .3s;
+    transition: .8s;
+}
+
+footer {
+    background: #1b1b1b;
+    padding: 10px;
+    color: #ccc;
 }
