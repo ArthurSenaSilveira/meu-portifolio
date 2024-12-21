@@ -3,30 +3,33 @@
 
 @media screen and (min-width: 481px){
     
-    header {
-        height: 598px;
-    }
-    #foto {
-        height: 320px;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr 50px 50px 50px 1fr;
+header {
+    height: 100vh;
+}
+#foto {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 50px 50px 50px 1fr;
 }
 #foto img {
     height: 150px;
+    grid-column: 3;
     grid-row: 2 / 4;
 }
 #foto h1 {
     font-size: 2.5em;
+    grid-column: 4;
     grid-row: 2 / 4;
     margin-bottom: 5px;
 }
 #foto p {
     font-size: 1.5em;
+    grid-column: 4;
     grid-row: 3 / 4;
 }
 #apresentacao {
-    height: 278px;
+    height: 50vh;
     display: grid;
     grid-template-columns: 1.5em 1fr 1fr 1fr 1.5em;
     grid-template-rows: repeat(4, 1fr);
@@ -37,6 +40,7 @@
 #apresentacao h2 {
     font-size: 1.8em;
     margin: 0px 20px;
+    grid-row: 1 / 4;
 }
 #apresentacao a {
     font-size: 1.4em;
