@@ -11,7 +11,9 @@
     overflow: hidden;
     z-index: 1;
     height: 100vh;
-    justify-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,9 +40,10 @@
 
 #foto {
     width: 100%;
+    height: 50vh;
 
     display: grid;
-    grid-template-columns: 15rem 45rem;
+    grid-template-columns: 15rem 50rem;
     grid-template-rows: 1fr 1fr 10em 100px 50px 1fr 1fr;
 
     
@@ -60,7 +63,7 @@
 
 #foto h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 35vw;
+    font-size: 200px;
     color: white;
     grid-column: 2;
     grid-row: 3 / 5;
@@ -75,7 +78,7 @@
 #foto p {
     color: #bdc3c7;
     font-family: 'Roboto', sans-serif;
-    font-size: 25vw;
+    font-size: 100px;
     grid-column: 2;
     grid-row: 4 / 5;
     text-align: center;
@@ -85,7 +88,6 @@
     width: 100%;
     height: 50vh;
     justify-items: center;
-    align-items: center;
     position: relative;
     z-index: 2;
 
@@ -97,7 +99,7 @@
 #apresentacao h2 {
     color: #bdc3c7;
     font-family: 'Montserrat', sans-serif;
-    font-size: 90vw;
+    font-size: 150px;
     grid-column: 1 / 7;
     grid-row: 1;
     text-align: center;
@@ -109,7 +111,7 @@
     text-decoration: none;
     cursor: pointer;
     margin: 0px 10px 0px 10px;
-    font-size: 25vw;
+    font-size: 100px;
 }
 
 #apresentacao a:hover {
@@ -142,8 +144,8 @@ main {
     height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30px 50px 11rem 11rem 11rem 11rem;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-rows: 30px 50px 11rem 11rem 11rem;
     color: white;
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -151,7 +153,7 @@ main {
 
 .trajetoria h1, p {
     text-align: center;
-    grid-column: 1 / 7;
+    grid-column: 2 / 7;
 }
 
 .trajetoria h1 {
@@ -161,14 +163,9 @@ main {
 .trajetoria p {
     grid-row: 2;
 }
-.trajetoria a {
-    padding: 0px 10px;
-    font-size: 20px;
-    font-weight: bolder;
-}
 
 .timeline {
-    grid-row: 3 / 7;
+    grid-row: 3 / 4;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -183,7 +180,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 0px;
-    grid-column: 1 / 7;
+    grid-column: 2 / 7;
     height: 25vh;
 }
 
@@ -221,9 +218,7 @@ main {
 
 .evento:nth-child(even) .descricao {
     order: -1;
-}
-
-.evento {
+}.evento {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;
