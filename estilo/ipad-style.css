@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 481px){
     
-header {
+#header {
     height: 100vh;
 }
 #foto {
