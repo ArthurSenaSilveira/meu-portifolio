@@ -144,7 +144,7 @@ main {
     height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr repeat(5, 1fr) 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 30px 50px 11rem 11rem 11rem 11rem;
     color: white;
     position: relative;
@@ -153,7 +153,7 @@ main {
 
 .trajetoria h1, p {
     text-align: center;
-    grid-column: 2 / 7;
+    grid-column: 1 / 7;
 }
 
 .trajetoria h1 {
@@ -180,7 +180,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 0px;
-    grid-column: 2 / 7;
+    grid-column: 1 / 7;
     height: 25vh;
 }
 

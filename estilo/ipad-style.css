@@ -58,5 +58,7 @@
     grid-column: 4;
     grid-row: 3;
 }
-
+.data, .descricao {
+    width: 25%;
+}
 }
