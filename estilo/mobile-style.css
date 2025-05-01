@@ -78,7 +78,7 @@
 #foto p {
     color: #bdc3c7;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.5vw;
+    font-size: 1em;
     grid-column: 2;
     grid-row: 3 / 4;
     text-align: center;
@@ -140,7 +140,7 @@ main {
 }
 
 .trajetoria {
-    height: 100vh;
+    height: 170vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1rem repeat(5, 1fr) 1rem;
@@ -164,7 +164,7 @@ main {
 }
 
 .timeline {
-    grid-row: 3 / 6;
+    grid-row: 3 / 9;
     position: absolute;
     top: 0;
     bottom: 0;

@@ -18,11 +18,11 @@ header {
 #foto h1 {
     font-size: 2.5em;
     grid-column: 4;
-    grid-row: 2 / 4;
+    grid-row: 2;
     margin-bottom: 5px;
 }
 #foto p {
-    font-size: 1.5em;
+    font-size: 1.6em;
     grid-row: 3 / 4;
 }
 #apresentacao {
@@ -39,7 +39,7 @@ header {
     margin: 0px 20px;
 }
 #apresentacao a {
-    font-size: 1.4em;
+    font-size: 0.7em;
 }
 #apresentacao p#linkedim {
     grid-column: 2;
