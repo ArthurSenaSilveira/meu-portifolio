@@ -54,7 +54,6 @@
 }
 
 #foto img {
-    height: 20vh;
     grid-column: 1;
     grid-row: 2 / 4;
     border-radius: 50%;
@@ -150,13 +149,15 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-.trajetoria h1, p {
+.trajetoria h1,
+.trajetoria p {
     text-align: center;
     grid-column: 2 / 7;
 }
 
 .trajetoria h1 {
     grid-row: 1;
+    padding: auto;
 }
 
 .trajetoria p {
@@ -270,7 +271,7 @@ main {
 
 footer {
     background: #1b1b1b;
-    padding: 10px;
+    padding: 15px;
     color: #ccc;
-    height: 25px;
+    text-align: center;
 }
